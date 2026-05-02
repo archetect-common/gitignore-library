@@ -1,0 +1,18 @@
+---
+description: "Gitignore — composable .gitignore generator"
+summary: >
+  Composable `.gitignore` generator for Archetect. Ships per-category
+  fragments (languages, editors, frameworks) and renders a single
+  `.gitignore` file by concatenating the selected ones. Most often
+  consumed by parent archetypes via `require("gitignore")` and a
+  single `gitignore.run(context, opts)` call; usable standalone to
+  drop a `.gitignore` into an existing project.
+authors: ["Jimmie Fulton <jimmie.fulton@gmail.com>"]
+tags: ["library", "git", "gitignore"]
+
+requires:
+  archetect: "3.0.0"
+
+templating:
+  trim_blocks: true
+  lstrip_blocks: true

@@ -1,0 +1,39 @@
+{% if contains(ignores, "Claude") then %}
+{% include "claude.atl" %}
+{% end %}
+{% if contains(ignores, "Rust") then %}
+{% include "rust.atl" %}
+{% end %}
+{% if contains(ignores, "Java") then %}
+{% include "java.atl" %}
+{% end %}
+{% if contains(ignores, "JavaScript") then %}
+{% include "javascript.atl" %}
+{% end %}
+{% if contains(ignores, "Python") then %}
+{% include "python.atl" %}
+{% end %}
+{% if contains(ignores, "IDEA") then %}
+{% include "idea.atl" %}
+{% end %}
+{% if contains(ignores, "Eclipse") then %}
+{% include "eclipse.atl" %}
+{% end %}
+{% if contains(ignores, "VSCode") then %}
+{% include "vscode.atl" %}
+{% end %}
+{% if contains(ignores, "Emacs") then %}
+{% include "emacs.atl" %}
+{% end %}
+{% if contains(ignores, "Vim") then %}
+{% include "vim.atl" %}
+{% end %}
+{% if contains(ignores, "ReactJS") then %}
+{% include "reactjs.atl" %}
+{% end %}
+{% if contains(ignores, "NextJS") then %}
+{% include "nextjs.atl" %}
+{% end %}
+{% if contains(ignores, "macOS") then %}
+{% include "macos.atl" %}
+{% end %}
