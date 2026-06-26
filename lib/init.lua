@@ -31,7 +31,9 @@ local M = {}
 M.categories = {
     "Claude",
     "Rust",
+    "Go",
     "Java",
+    "DotNet",
     "JavaScript",
     "Python",
     "IDEA",

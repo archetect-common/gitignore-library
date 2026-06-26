@@ -4,8 +4,14 @@
 {% if contains(ignores, "Rust") then %}
 {% include "rust.atl" %}
 {% end %}
+{% if contains(ignores, "Go") then %}
+{% include "go.atl" %}
+{% end %}
 {% if contains(ignores, "Java") then %}
 {% include "java.atl" %}
+{% end %}
+{% if contains(ignores, "DotNet") then %}
+{% include "dotnet.atl" %}
 {% end %}
 {% if contains(ignores, "JavaScript") then %}
 {% include "javascript.atl" %}

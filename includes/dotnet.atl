@@ -1,0 +1,23 @@
+### DotNet ###
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+out/
+
+# Visual Studio artifacts
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Rider
+*.sln.iml

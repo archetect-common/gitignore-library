@@ -78,6 +78,28 @@ gitignore.prompt(context, {
 })
 ```
 
+## Usage — `catalog.render()` one-shot
+
+When phase separation isn't needed and you don't need to split prompt from file
+writes, skip `library: true` and drive the library as a plain catalog entry:
+
+```yaml
+# parent archetype.yaml
+catalog:
+  gitignore:
+    source: "https://github.com/archetect-common/gitignore-library.git#v1"
+```
+
+```lua
+-- parent archetype.lua
+-- Pre-set ignores to skip the interactive prompt entirely.
+context:set("ignores", { "Rust", "IDEA", "Claude" })
+catalog.render("gitignore", context, { destination = context:get("project-name") })
+```
+
+No `context:merge()` needed — gitignore produces no context outputs.
+The catalog-level `destination` shifts where `.gitignore` is written.
+
 ## Usage — standalone
 
 Drop a `.gitignore` into the current directory:
